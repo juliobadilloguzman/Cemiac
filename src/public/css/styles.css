@@ -1,0 +1,103 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+
+/********** NAVEGACION ***********/
+
+nav {
+    padding: 0 !important;
+    margin: 0 !important;
+    padding: 0.8rem !important;
+}
+
+
+/*********** BANNER ***********/
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 4rem;
+    background: linear-gradient(326deg, #5f0a87 0%, rgba(164, 80, 139, 0.8) 74%), url("/img/equipo.jpg");
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .btn-conoce {
+    display: inline-block;
+    background: rgb(80, 31, 65);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 15px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.banner .btn-conoce:hover {
+    background: rgb(133, 52, 108);
+    -webkit-box-shadow: 0px 2px 16px -3px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 0px 2px 16px -3px rgba(0, 0, 0, 0.46);
+    box-shadow: 0px 2px 16px -3px rgba(0, 0, 0, 0.46);
+}
+
+.banner .titulo-banner {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    font-size: 3.3rem;
+    text-shadow: -2px 1px 9px rgba(0, 0, 0, 0.25);
+}
+
+
+/*********** UTILIDADES ***********/
+
+.text-white {
+    color: #fff !important
+}
+
+
+/*********** MEDIA QUIERES ***********/
+
+@media(max-width: 800px) {
+    .banner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media(max-width: 550px) {
+    .banner .titulo-banner {
+        font-size: 2.5rem;
+    }
+    .banner p {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 430px) {
+    .banner .titulo-banner {
+        font-size: 2rem;
+    }
+    .banner p {
+        font-size: 0.7rem;
+    }
+}
