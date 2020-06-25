@@ -1,0 +1,344 @@
+/*********** ACERCA DE ***********/
+
+.acerca {
+    margin: auto;
+    width: 80%;
+    margin-top: 3rem;
+    text-align: center !important;
+    min-height: 50vh;
+}
+
+.acerca .title-acerca {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.container-info-acerca {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-info-acerca .info-1 {
+    padding: 2rem;
+    color: #fff;
+    background: #FC5C7D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container-info-acerca .info-2 {
+    padding: 2rem;
+    color: #fff;
+    background: #FC5C7D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container-info-acerca .info-3 {
+    padding: 2rem;
+    color: #fff;
+    background: #FC5C7D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.acerca .title-acerca span {
+    color: rgba(164, 80, 139, 1);
+    text-shadow: 1px 1px 17px rgba(150, 150, 150, 0.62);
+}
+
+.container-cards-acerca {
+    padding: 3rem;
+    grid-column-gap: 3rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container-cards-acerca i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/*********** MISION VISION ***********/
+
+.mision-vision {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+    width: 80%;
+    margin: auto;
+}
+
+.header-modified {
+    border: 1px solid rgb(167, 167, 167) !important;
+    border-radius: 10px !important;
+    display: grid;
+    justify-content: space-between;
+}
+
+.no-style {
+    border: none !important;
+    outline: none !important;
+}
+
+.title-drop {
+    font-size: 1.3rem !important;
+    font-weight: 700;
+}
+
+.mision-vision .card {
+    margin-bottom: 1rem !important;
+}
+
+
+/*********** QUIENES SOMOS ***********/
+
+.quienes-somos {
+    display: grid;
+    align-content: center;
+    min-height: 40vh;
+    text-align: center;
+    background: linear-gradient(326deg, #5f0a87 0%, rgba(164, 80, 139, 0.8) 74%), url("/img/dona.jpg");
+}
+
+.quienes-somos h4 {
+    font-size: 2.5rem;
+}
+
+
+/*********** GALERIA DE FOTOS ***********/
+
+.fotos-quienesSomos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.foto {
+    height: 40vh;
+    cursor: pointer;
+}
+
+.foto-marco {
+    background: url("/img/integrantes/marco.jpg");
+    background-size: cover;
+}
+
+.foto-andrea {
+    background-image: url("/img/integrantes/andrea.jpg");
+    background-size: cover;
+}
+
+.foto-leonardo {
+    background-image: url("/img/integrantes/leonardo.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-maria {
+    background-image: url("/img/integrantes/maria.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.foto-rodrigob {
+    background-image: url("/img/integrantes/rodrigob.jpg");
+    background-size: cover;
+    background-position: 0 30%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.foto-rodrigou {
+    background-image: url("/img/integrantes/rodrigou.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-job {
+    background-image: url("/img/integrantes/job.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+
+/*********** LOGROS ***********/
+
+.logros {
+    min-width: 50vh;
+}
+
+
+/*********** PATROCINIOS ***********/
+
+.patrocinadores {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-row-gap: 2rem;
+}
+
+.foto-patrocinio {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: 20vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*********** DONA ***********/
+
+.dona {
+    margin-top: 2rem;
+    min-width: 50vh;
+    text-align: center;
+    min-height: 40vh;
+    background: linear-gradient(326deg, #5f0a87 0%, rgba(164, 80, 139, 0.8) 74%), url("/img/dona.jpg");
+    display: grid;
+    align-content: center;
+    background-image: bottom;
+}
+
+.dona h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 !important;
+}
+
+.dona p {
+    margin: 0 !important;
+    margin-top: 1.5rem;
+}
+
+
+/*********** DONATIVO ***********/
+
+.reto-emprendedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.donativo-reto {
+    min-height: 70vh;
+    background-image: url("/img/patrocinios/donativoreto.jpg");
+    background-size: cover;
+}
+
+
+/*********** CONTACTO ***********/
+
+.contacto {
+    background: #272834;
+    min-height: 40vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/*********** UTILIDADES ***********/
+
+.text-white {
+    color: #fff !important
+}
+
+.separador {
+    margin: auto;
+    background-color: rgb(133, 52, 108);
+    height: 7px;
+    width: 80px;
+}
+
+.separador-blanco {
+    margin: auto;
+    background-color: #fff;
+    height: 7px;
+    width: 80px;
+}
+
+.btn-green {
+    background-color: #28a745 !important;
+    color: #fff !important;
+}
+
+
+/*********** MODAL ***********/
+
+.container-modal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem !important;
+}
+
+.img-modal {
+    min-height: 40vh;
+    background-size: cover;
+}
+
+.descripcion-modal {
+    padding: 2rem !important;
+}
+
+
+/*********** MEDIA QUIERES ***********/
+
+@media(max-width: 800px) {
+    .banner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .quienes-somos {
+        grid-template-columns: 1fr;
+    }
+    .container-img-quienesSomos {
+        display: none;
+    }
+}
+
+@media(max-width:700px) {
+    .container-cards-acerca {
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+    .container-cards-acerca div {
+        margin-top: 1.2rem;
+    }
+}
+
+@media(max-width: 550px) {
+    .banner {
+        background-position: right;
+    }
+    .banner .titulo-banner {
+        font-size: 2.5rem;
+    }
+    .banner p {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 430px) {
+    .banner .titulo-banner {
+        font-size: 2rem;
+    }
+    .banner p {
+        font-size: 0.7rem;
+    }
+}

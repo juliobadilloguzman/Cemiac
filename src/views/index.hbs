@@ -2,33 +2,417 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">CEMIAC</a>
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <div class="collapse navbar-collapse sticky" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"><img class="logo-img" src="/img/logoazul.png" alt=""></a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menuTop">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="acerca">
                 <a class="nav-link" href="#">Acerca de</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nosotros">
+                <a class="nav-link" href="#">Quiénes sómos</a>
+            </li>
+            <li class="nav-item" id="evidencia">
                 <a class="nav-link" href="#">Evidencia</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Dona</a>
+            <li class="nav-item" id="alianzas">
+                <a class="nav-link" href="#">Alianzas</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="contacto">
                 <a class="nav-link" href="#">Contacto</a>
             </li>
         </ul>
+        {{!-- <button id="btn-dona-menu" class="btn btn-green">DONA</button> --}}
     </div>
 </nav>
 
+{{!-- BACK TO TOP --}}
+<a id="buttonTop"></a>
+
+{{!-- BANNER --}}
 <section class="banner">
     <div>
-        <h1 class="text-white titulo-banner">Transformando vidas</h1>
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, commodi accusamus mollitia perspiciatis quod dolore fugiat cum, nostrum doloremque tempore fuga magni quis optio iure, a architecto voluptatem sint. Est.</p>
-        <a href="#" class="btn-conoce">Conóce más</a>
+        <h2 class="text-white title-banner" data-aos="fade-right"><span class="title-transformando">Transformando</span> <span class="title-vidas">Vidas</span></h2>
+        <p class="text-white description-banner" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="container-banner-buttons">
+          <button class="btn-conoce" data-aos="fade-down">Conóce más <i class="fas fa-chevron-right"></i></button>
+          <button class="btn-contacto-banner" data-aos="fade-down">Contactanos <i class="fas fa-chevron-right"></i></button>
+        </div>
     </div>
 </section>
 
+
+
+{{!-- ACERCA DE NOSOTROS --}}
+
+<section class="acercaDe commonSection ab_agency" id="acerca-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 col-md-12 PR_79 acerca-descripcion">
+                        <div class="div-title">
+                            <span>ACERCA DE CEMIAC</span>
+                        </div>
+                        <div class="para-1">
+                          <p>Es una Asociación Civil que surge tras la alta problemática que existe por mejorar la calidad de vida de comunidades marginadas a través de la generación de espacios y viviendas aptos para el desarrollo humano. </p>
+                        </div>
+                        <div class="para-2">
+                          <p>Por este motivo, desde 2017 y a partir de los sismos que afectaron al centro de México, el proyecto ha generado iniciativas capaces de mejorar la calidad de vida de estas comunidades. A la par de generar alianzas con el sector público, privado e instituciones con las que ha conseguido financiar las actividades antes mencionadas. </p>
+                        </div>
+                        <div class="para-3">
+                          <p>Al día de hoy, el proyecto es liderado por 7 jóvenes mexicanos de distintas áreas del conocimientos que, al integrar sus conocimientos y habilidades, han constituido esta Asociación a lo largo de más de 3 años de trabajo. 
+                  </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-6 foto-acerca">
+                        <div class="ab_img1" data-aos="fade-left">
+                            <img src="/img/acerca.jpg" alt=""/>
+                        </div>
+                        <div class="ab_img2" data-aos="fade-right">
+                            <img src="/img/acercafondo.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="faq-style-one">
+            <div class="container">
+                <div class="accrodion-grp" data-grp-name="faq-accrodion">
+                    <div class="accrodion active">
+                        <div class="accrodion-title">
+                            <h4>Misión</h4>
+                        </div>
+                        <div class="accrodion-content">
+                            <div class="inner">
+                                <p>Nuestro objetivo es generar espacios y viviendas capaces de mejorar la calidad de vida de comunidades marginadas a través de la arquitectura social, disminuyendo el impacto ambiental y generando empleo a personas de las mismas comunidades.</p>
+                            </div><!-- /.inner -->
+                        </div>
+                    </div>
+                    <div class="accrodion ">
+                        <div class="accrodion-title">
+                            <h4>Visión</h4>
+                        </div>
+                        <div class="accrodion-content">
+                            <div class="inner">
+                              
+                                <p>A largo plazo generamos una cultura colectiva de participación con el objetivo de inspirar a más jóvenes, empresas e instituciones a participar en el proyecto. Además de crear espacios públicos dedicados a la capacitación sobre técnicas alternativas de construcción, asesoramiento a personas interesadas en el área y optar por plataformas digitales donde todo este material pueda estar disponible para personas de cualquier zona geográfica.</p>
+                            </div><!-- /.inner -->
+                        </div>
+                    </div>
+                    <div class="accrodion">
+                        <div class="accrodion-title">
+                            <h4>Objetivos de Desarrollo Sostenible ONU 2030</h4>
+                        </div>
+                        <div class="accrodion-content">
+                            <div class="inner">
+                              <p class="p-objetivo">Objetivo 11: Ciudades y Comunidades Sostenibles </p>
+                                <p>Parte de nuestro trabajo se fundamenta en las metas que establece la ONU para lograr el desarrollo sustentable en 2030 con el objetivo N°11, el cual busca crear conciencia en el diseño y desarrollo de ciudades o comunidades sostenibles. Para que esto se logre es necesario (entre otros factores) planificar y llevar a cabo propuestas que garanticen desde el acceso a viviendas dignas, seguras y asequibles, hasta la creación de proyectos que reduzcan el impacto ambiental generado por el ser humano. Nuestros proyectos otorgan soluciones que se ajustan a las necesidades del usuario, trabajando en conjunto con la misma comunidad para así poder generar más empleos en las zonas de impacto donde más lo necesiten.</p>
+                            </div><!-- /.inner -->
+                        </div>
+                    </div>
+                
+                </div>
+            </div><!-- /.container -->
+        </section><!-- /.faq-style-one -->
+
+            </div>
+        </section>
+
+{{!-- NOSOTROS --}}
+
+<section class="nosotros" id="nosotros-content">
+
+  <div class="div-title">
+    <h3>¿Quienes Sómos?</h3>
+  </div>
+
+  <div class="div-description">
+    <span>Jóvenes mexicanos de distintas regiones del país que buscan impactar a comunidades a través de la arquitectura social. </span>
+  </div>
+
+
+  <div class="team_slider">
+                <div class="singleTM">
+                    <div class="tm_img">
+                        <img src="/img/integrantes/marco2.jpg" alt="">
+                        <div class="tm_overlay">
+                            
+                            <button data-id="1" class="common_btn btn-fotoModal"><span>Conoce Más</span></button>
+                        </div>
+                    </div>
+                    <div class="detail_TM">
+                        <h5 class="">Marco Antonio Luna Palacios</h5>
+                        <h6>Estudiante Lic. Administración y Estrategia de Negocios </h6>
+                    </div>
+                </div>
+                <div class="singleTM">
+                    <div class="tm_img">
+                        <img src="/img/integrantes/rodrigou2.jpg" alt="">
+                        <div class="tm_overlay">
+                            
+                            <button data-id="6" class="common_btn btn-fotoModal"><span>Conoce Más</span></button>
+                        </div>
+                    </div>
+                    <div class="detail_TM">
+                        <h5>Rodrigo Unda López</h5>
+                        <h6>Estudiante Lic. Administración Financiera</h6>
+                    </div>
+                </div>
+                <div class="singleTM">
+                    <div class="tm_img">
+                        <img src="/img/integrantes/maria2.jpg" alt="">
+                        <div class="tm_overlay">
+                            
+                            <button data-id="4" class="common_btn btn-fotoModal"><span>Conoce Más</span></button>
+                        </div>
+                    </div>
+                    <div class="detail_TM">
+                        <h5>María Guadalupe Gama Cruz</h5>
+                        <h6>Estudiante de Ingeniería en Mecatrónica</h6>
+                    </div>
+                </div>
+                <div class="singleTM">
+                    <div class="tm_img">
+                        <img src="/img/integrantes/leonardo2.jpg" alt="">
+                        <div class="tm_overlay">
+                            
+                            <button data-id="3" class="common_btn btn-fotoModal"><span>Conoce Más</span></button>
+                        </div>
+                    </div>
+                    <div class="detail_TM">
+                        <h5>Jesus Leonardo Medina Rodriguez</h5>
+                        <h6>Arquitecto</h6>
+                    </div>
+                </div>
+                <div class="singleTM">
+                    <div class="tm_img">
+                        <img src="/img/integrantes/andrea2.jpg" alt="">
+                        <div class="tm_overlay">
+                            
+                            <button data-id="2" class="common_btn btn-fotoModal"><span>Conoce Más</span></button>
+                        </div>
+                    </div>
+                    <div class="detail_TM">
+                        <h5>Andrea Reyna Casas</h5>
+                        <h6>Estudiante de la Lic. en Arquitectura</h6>
+                    </div>
+                </div>
+                <div class="singleTM">
+                    <div class="tm_img">
+                        <img src="/img/integrantes/rodrigob2.jpg" alt="">
+                        <div class="tm_overlay">
+                            
+                            <button data-id="5" class="common_btn btn-fotoModal"><span>Conoce Más</span></button>
+                        </div>
+                    </div>
+                    <div class="detail_TM">
+                        <h5>Rodrigo Barreto Medrano</h5>
+                        <h6>Estudiante Arquitectura</h6>
+                    </div>
+                </div>
+                <div class="singleTM">
+                    <div class="tm_img">
+                        <img src="/img/integrantes/job2.jpg" alt="">
+                        <div class="tm_overlay">
+                            
+                            <button data-id="7" class="common_btn btn-fotoModal"><span>Conoce Más</span></button>
+                        </div>
+                    </div>
+                    <div class="detail_TM">
+                        <h5>Job Rigoberto Medina Hernández</h5>
+                        <h6>Estudiante de Ingeniería Civil</h6>
+                    </div>
+                </div>
+            </div>
+</section>
+
+{{!-- LOGROS --}}
+
+<section class="commonSection featured" id="evidencia-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12  col-md-8">
+                <div class="features_content">
+                    <div class="div-title">
+                      <span>LOGROS</span>
+                    </div>
+                    <p class="logros-descripcion">
+                        Conoce los proyectos que hemos realizado con mucho esfuerzo y dedicación.
+                    </p>
+                    <div class="singleFeature">
+                        <div class="f_count">01</div>
+                        <h3>Líderes del Mañana por Jojutla</h3>
+                        <p>
+                            LDMxJojutla fue la primera fase de lo que actualmente es CEMIAC A.C.
+                            Esta iniciativa surge tras los sismos que afectaron al centro de México en 2017 por lo que diversos jóvenes con la distinción Líderes del Mañana, del Tecnológico de Monterrey se organizaron para apoyar a las personas afectadas por este desastre en la comunidad de Jojutla, Morelos. 
+                        </p>
+                    </div>
+                    <div class="singleFeature">
+                        <div class="f_count">02</div>
+                        <h3>Talleres Emergentes</h3>
+                        <p>
+                            Con este proyecto, la actual Asociación consiguió en 2018 crear un espacio llamado Talleres Emergentes, en donde se impartieron cursos de programación, robótica y diseño de páginas web. Dichos talleres consiguieron impactar a más de 50 personas de forma directa e indirectamente.
+                        </p>
+                    </div>
+                    <div class="singleFeature">
+                        <div class="f_count">03</div>
+                        <h3>Casa Eva</h3>
+                        <p>
+                            Después de 2 años de los sismos de 2017, aún existía una basta cantidad de familias que seguían en condiciones vulnerables. De esta forma, tras realizar estudios, entrevistas y conocer a cada una de ellas, se decidió apoyar a la familia de la Sra. Eva Rea Domínguez. Por lo que en el verano de 2019 se inició con los trabajos de construcción de lo que sería la primer vivienda del proyecto. <button id="btn-verInfo">Ver más</button> <br>
+                            <span class="masInfoEva">
+                              Esta construcción fue financiada por personas del sector público, privado e instituciones que confiaron fielmente en el proyecto. El costo ascendió a más de $250,000, generando así empleo para 15 personas y un nuevo hogar para una familia. <br>
+                            Del mismo modo, el diseño de la construcción fue un trabajo en conjunto entre estudiantes de Arquitectura e Ingeniería Civil del Tecnológico de Monterrey Campus Querétaro, Campus Laguna, la Universidad Autónoma del Estado de Morelos y el Grupo Inmobiliario Rualba. 
+                            Dicha vivienda cuenta con 2 recámaras, una cocina con sus respectivos accesorios, un espacio común, 1 cisterna, conexiones eléctricas, hidrosanitarias y una correcta distribución de muros que permiten el correcto desplazamiento de una persona con silla de ruedas.
+                            </span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+{{!-- ALIANZAS --}}
+
+<section class="commonSection client" id="alianzas-content">
+
+  
+
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="div-title">
+              <h3>Alianzas</h3>
+            </div>
+              <p class="sec_desc">
+                  Conoce a nuestros aliados los cuales Lorem, ipsum dolor.
+              </p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="client_slider">
+                  <div class="singleClient">
+                      <a href="#">
+                          <img src="/img/patrocinios/daltile.png" alt=""/>
+                      </a>
+                  </div>
+                  <div class="singleClient">
+                      <a href="#">
+                          <img src="/img/patrocinios/lideres.png" alt=""/>
+                      </a>
+                  </div>
+                  <div class="singleClient">
+                      <a href="#">
+                          <img src="/img/patrocinios/morelos24.png" alt=""/>
+                      </a>
+                  </div>
+                  <div class="singleClient">
+                      <a href="#">
+                          <img src="/img/patrocinios/rualba.png" alt=""/>
+                      </a>
+                  </div>
+                  <div class="singleClient">
+                      <a href="#">
+                          <img src="/img/patrocinios/tecmonterrey.png" alt=""/>
+                      </a>
+                  </div>
+                  <div class="singleClient">
+                      <a href="#">
+                          <img src="/img/patrocinios/zonaeihorizontal.png" alt=""/>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+{{!-- DONATIVO --}}
+<section class="donativo">
+  <h3>Reto Emprendedor 2018</h4>
+  <h4>Donativo de <span>$170,903</span> </h6>
+  <h5>Por parte del Reto Emprendedor con Sentido Humano 2018</h5>
+  <h6>Tecnológico de Monterrey Campus Cuernavaca</h6>
+
+</section>
+
+{{!-- CONTACTO --}}
+<section class="commonSection ContactPage" id="contacto-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h4 class="sub_title">Contáctanos</h4>
+                <h2 class="sec_title">Escríbenos un mensaje</h2>
+                <p class="sec_desc">
+                    Contáctanos para cualquier comentario o para formar parte de nuestro equipo.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-lg-offset-2 col-sm-12 col-md-12 col-md-offset-1">
+                <form class="contactFrom" id="contactForm">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <input class="input-form required" type="text" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <input class="input-form required" type="email"id="correo" placeholder="Correo">
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <input class="input-form required" type="text" placeholder="Telefono">
+                        </div>
+
+                        <div class="col-lg-6 col-sm-6">
+                            <select class="input-form"id="enterado">
+                              <option disabled selected>¿Como te enteraste?</option>
+                              <option>Presencia en eventos de emprendimiento</option>
+                              <option>Recomendación de un amigo</option>
+                              <option>Medios de comunicación</option>
+                               <option>Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-12 col-sm-12">
+                            <input class="input-form required" type="texto" id="asunto" placeholder="Asunto">
+                        </div>
+                     
+                        <div class="col-lg-12 col-sm-12">
+                            <textarea class="input-form required" id="mensaje" placeholder="Escribe un mensaje"></textarea>
+                        </div>
+                    </div>
+                    <button class="common_btn red_bg" type="button" id="con_submit"><span>Enviar</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{!-- FOOTER --}}
+<footer>
+  <p><span>CEMIAC</span> 2020</p>
+</footer>
+
+
+{{!-- MODAL QUIENES SOMOS --}}
+<div class="modal fade" id="modalQuienesSomos" tabindex="-1" role="dialog" aria-labelledby="modalQuienesSomosTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body container-modal">
+          <img class="img-modal" alt="">
+          <div class="descripcion-modal">
+              <h4 id="nombre-modal">Nombre</h4>
+              <h6 id="carrera-modal">Carrera</h6>
+              <p id="estado-modal">Estado</p>
+              <p id="frase-modal">Frase</p>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
