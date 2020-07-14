@@ -421,7 +421,8 @@ nav {
     position: absolute;
     bottom: 0;
     right: 0;
-    background: rgba(43, 140, 230, 0.7);
+    /*background: rgba(43, 140, 230, 0.7);*/
+    background: rgba(255, 81, 25, 0.5);
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -477,7 +478,8 @@ nav {
     width: 100%;
 }
 
-.tm_overlay button.common_btn {
+.tm_overlay button.common_btn,
+.tm_overlay button.common_btn2 {
     position: absolute;
     left: 20px;
     bottom: 50px;
@@ -493,7 +495,8 @@ nav {
     -o-transition: all ease 900ms;
 }
 
-.singleTM:hover .tm_overlay button.common_btn {
+.singleTM:hover .tm_overlay button.common_btn,
+.singleTM:hover .tm_overlay button.common_btn2 {
     visibility: visible;
     opacity: 1;
     left: 50px;
@@ -555,7 +558,7 @@ nav {
 }
 
 .singleTM:hover .detail_TM h5 {
-    color: #e62b4a;
+    color: #E15119;
 }
 
 .singleTM:hover .detail_TM h6:after {
@@ -641,13 +644,15 @@ nav {
     font-size: 1.1rem;
 }
 
-.singleFeature {
+.singleFeature,
+.singleFeature2 {
     position: relative;
     padding-left: 70px;
     margin-bottom: 56px;
 }
 
-.singleFeature:last-child {
+.singleFeature:last-child,
+.singleFeature2:last-child {
     margin-bottom: 0;
 }
 
@@ -657,7 +662,7 @@ nav {
     top: 58px;
     content: '';
     width: 2px;
-    height: 95px;
+    height: 400px;
     background: #000;
 }
 
@@ -665,7 +670,8 @@ nav {
     display: none;
 }
 
-.singleFeature .f_count {
+.singleFeature .f_count,
+.singleFeature2 .f_count {
     position: absolute;
     left: 0;
     top: 0;
@@ -678,7 +684,8 @@ nav {
     background: #000;
 }
 
-.singleFeature h3 {
+.singleFeature h3,
+.singleFeature2 h3 {
     font-size: 18px;
     line-height: .8;
     letter-spacing: 0.72px;
@@ -793,7 +800,7 @@ nav {
     bottom: 0;
     margin: auto 0;
     content: '';
-    background: #e62b4a;
+    background: #E15119;
     visibility: hidden;
     opacity: 0;
     transition: all ease 500ms;
@@ -865,7 +872,7 @@ nav {
     bottom: 0;
     margin: auto 0;
     content: '';
-    background: #e62b4a;
+    background: #E15119;
     visibility: hidden;
     opacity: 0;
     transition: all ease 500ms;
@@ -1148,7 +1155,8 @@ textarea.input-form:focus {
     border: 2px solid #f4f4f4;
 }
 
-.common_btn {
+.common_btn,
+.common_btn2 {
     border: none;
     font-size: 16px;
     font-weight: 400;
@@ -1170,12 +1178,14 @@ textarea.input-form:focus {
     -o-transition: all 0.4s ease-out;
 }
 
-.common_btn span {
+.common_btn span,
+.common_btn2 span {
     position: relative;
     z-index: 2;
 }
 
-.common_btn:after {
+.common_btn:after,
+.common_btn2:after {
     content: "";
     width: 4px;
     height: 100%;
@@ -1190,11 +1200,13 @@ textarea.input-form:focus {
     -o-transition: all 0.4s ease-out;
 }
 
-.common_btn:hover:after {
+.common_btn:hover:after,
+.common_btn2:hover:after {
     width: 100%;
 }
 
-.common_btn:hover {
+.common_btn:hover,
+.common_btn2:hover {
     color: #000;
 }
 
@@ -1202,8 +1214,9 @@ textarea.input-form:focus {
     padding: 28px 40.5px;
 }
 
-.common_btn.red_bg:after {
-    background: #007fda;
+.common_btn.red_bg:after,
+.common_btn2.red_bg:after {
+    background: #E15119;
 }
 
 .common_btn.red_bg:hover:after {
@@ -1226,14 +1239,20 @@ footer {
     background: linear-gradient(to right, #2F80ED, #56CCF2);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex !important;
+    padding: 2rem !important;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    flex-direction: column;
+    font-size: 1rem;
     color: #fff;
 }
 
 footer p span {
     font-weight: 700;
+}
+
+footer .logo-img-footer {
+    width: 25vh;
 }
 
 
@@ -1273,7 +1292,7 @@ footer p span {
 
 #buttonTop {
     display: inline-block;
-    background-color: #007fda;
+    background-color: #E15119;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -1398,6 +1417,20 @@ footer p span {
 .container-modal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.containerModalTalleres {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem !important;
+}
+
+.containerModalTalleres img {
+    width: 90% !important;
+}
+
+.containerModalTalleres p {
+    text-align: justify;
 }
 
 #nombre-modal {

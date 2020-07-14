@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 
         let id = parseInt($(this).data('id'));
-        console.log('El id es: ' + id);
+
 
         let integrantes = [
             {},
@@ -17,7 +17,7 @@ $(document).ready(function() {
                 carrera: 'Estudiante Lic. Administración y Estrategia de Negocios',
                 imagen: 'marco2.jpg',
                 estado: 'Morelos',
-                frase: `"Ayudar no solo aporta un beneficio a los que la reciben, también a quien la da."`
+                frase: `"El cambio verdadero empieza cuando la ayuda que das, provoca que alguien más también lo haga."`
             },
             {
                 id: 2,
@@ -43,7 +43,7 @@ $(document).ready(function() {
                 apellido: 'Gama',
                 carrera: 'Estudiante de Ingeniería en Mecatrónica',
                 imagen: 'maria2.jpg',
-                estado: 'morelos',
+                estado: 'Morelos',
                 frase: `"Ayudar no solo aporta un beneficio a los que la reciben, también a quien la da."`
             },
             {
@@ -59,7 +59,7 @@ $(document).ready(function() {
                 id: 6,
                 nombre: 'Rodrigo',
                 apellido: 'Unda',
-                carrera: 'Estudiante Lic. Administración Financiera',
+                carrera: 'Lic. en Administración Financiera',
                 imagen: 'rodrigou2.jpg',
                 estado: 'Morelos',
                 frase: `"Ayudar no solo aporta un beneficio a los que la reciben, también a quien la da."`
@@ -84,6 +84,24 @@ $(document).ready(function() {
         $('#frase-modal').html(integrantes[id].frase);
 
         $('#modalQuienesSomos').modal('show');
+
+    });
+
+    $('body').on('click', '.btn-modalLogros', function() {
+
+        $('#modalLogros').modal('show');
+
+    });
+
+    $('body').on('click', '.btn-modalTalleres', function() {
+
+        $('#modalTalleres').modal('show');
+
+    });
+
+    $('body').on('click', '.btn-modalCasa', function() {
+
+        $('#modalCasa').modal('show');
 
     });
 
