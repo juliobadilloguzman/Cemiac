@@ -17,6 +17,7 @@ $(document).ready(function() {
                 carrera: 'Estudiante Lic. Administración y Estrategia de Negocios',
                 imagen: 'marco2.jpg',
                 estado: 'Morelos',
+                puesto: 'Presidente',
                 frase: `"El cambio verdadero empieza cuando la ayuda que das, provoca que alguien más también lo haga."`
             },
             {
@@ -26,6 +27,7 @@ $(document).ready(function() {
                 carrera: 'Estudiante de la Lic. en Arquitectura',
                 imagen: 'andrea2.jpg',
                 estado: 'Durango',
+                puesto: 'Arquitectura',
                 frase: `"Cuando hay problemas, cualquiera con la capacidad de hacer algo tiene la responsabilidad de hacerlo."`
             },
             {
@@ -35,6 +37,7 @@ $(document).ready(function() {
                 carrera: 'Arquitecto',
                 imagen: 'leonardo2.jpg',
                 estado: 'Coahuila',
+                puesto: 'Arquitectura',
                 frase: `"El verdadero éxito de uno se puede encontrar en la sonrisa de alguien más."`
             },
             {
@@ -44,6 +47,7 @@ $(document).ready(function() {
                 carrera: 'Estudiante de Ingeniería en Mecatrónica',
                 imagen: 'maria2.jpg',
                 estado: 'Morelos',
+                puesto: 'Estrategia y logística',
                 frase: `"Ayudar no solo aporta un beneficio a los que la reciben, también a quien la da."`
             },
             {
@@ -53,6 +57,7 @@ $(document).ready(function() {
                 carrera: 'Estudiante Arquitectura ',
                 imagen: 'rodrigob2.jpg',
                 estado: 'Morelos',
+                puesto: 'Arquitectura',
                 frase: `"Un minuto de tu tiempo para otro es un mundo, regálaselo."`
             },
             {
@@ -62,6 +67,7 @@ $(document).ready(function() {
                 carrera: 'Lic. en Administración Financiera',
                 imagen: 'rodrigou2.jpg',
                 estado: 'Morelos',
+                puesto: 'Finanzas',
                 frase: `"Ayudar no solo aporta un beneficio a los que la reciben, también a quien la da."`
             },
             {
@@ -71,6 +77,7 @@ $(document).ready(function() {
                 carrera: 'Estudiante de Ingeniería Civil',
                 imagen: 'job2.jpg',
                 estado: 'Querétaro',
+                puesto: 'Construcción y validación',
                 frase: `"Siempre da lo mejor de ti, y lo demás sólo se logrará."`
             },
         ]
@@ -80,6 +87,7 @@ $(document).ready(function() {
         $('#carrera-modal').html(integrantes[id].carrera);
         $('#estado-modal').html(integrantes[id].estado);
         $('#frase-modal').html(integrantes[id].frase);
+        $('#puesto-modal').html(integrantes[id].puesto);
         $(".img-modal").attr("src", "/img/integrantes/" + integrantes[id].imagen);
         $('#frase-modal').html(integrantes[id].frase);
 
@@ -110,7 +118,6 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
         slidesToShow: 3,
         dots: true,
-        arrows: false,
         centerMode: true,
         centerPadding: '350px',
         responsive: [{
@@ -171,7 +178,7 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
         slidesToShow: 3,
         dots: true,
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: '350px',
         responsive: [{
@@ -208,6 +215,7 @@ $(document).ready(function() {
             }
         ]
     });
+
 
     var accrodionGrp = $('.accrodion-grp');
     accrodionGrp.each(function() {
