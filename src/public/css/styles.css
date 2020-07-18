@@ -1445,3 +1445,21 @@ footer .logo-img-footer {
 .italic {
     font-style: italic;
 }
+
+.bold {
+    font-weight: 700;
+}
+
+.desc-cemiac {
+    width: 80% !important;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.naranja {
+    color: #E15119 !important;
+}
