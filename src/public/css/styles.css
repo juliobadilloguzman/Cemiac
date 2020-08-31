@@ -20,6 +20,7 @@ nav {
     padding: 0.8rem !important;
     padding-left: 5rem !important;
     padding-right: 5rem !important;
+    z-index: 100;
 }
 
 .logo-img {
@@ -44,26 +45,26 @@ nav {
     background-repeat: no-repeat;
 }
 
-.banner .title-transformando {
+header .title-transformando {
     font-size: 3.5rem;
     font-weight: 700;
 }
 
-.banner .title-vidas {
+header .title-vidas {
     font-size: 3.5rem;
     font-weight: 400;
 }
 
-.banner .description-banner {
+header .description-banner {
     font-size: 2rem;
     font-weight: 400;
 }
 
-.banner p {
+header p {
     margin-bottom: 2rem !important;
 }
 
-.banner .btn-conoce {
+header .btn-conoce {
     background: none !important;
     padding: 1.1rem !important;
     padding-right: 2rem !important;
@@ -79,12 +80,12 @@ nav {
     transition: all 0.2s ease-in;
 }
 
-.banner .btn-conoce:hover {
+header .btn-conoce:hover {
     background: #fff !important;
     color: #000 !important;
 }
 
-.banner .btn-conoce i {
+header .btn-conoce i {
     background: #fff !important;
     color: #000 !important;
     border-radius: 30px;
@@ -93,7 +94,7 @@ nav {
     margin-left: 1rem !important
 }
 
-.banner .btn-contacto-banner {
+header .btn-contacto-banner {
     background: #fff !important;
     padding: 1.1rem !important;
     padding-right: 2rem !important;
@@ -108,13 +109,13 @@ nav {
     transition: all 0.2s ease-in;
 }
 
-.banner .btn-contacto-banner:hover {
+header .btn-contacto-banner:hover {
     background: none !important;
     color: #fff !important;
     border: 1px solid #fff !important;
 }
 
-.banner .btn-contacto-banner i {
+header .btn-contacto-banner i {
     background: #000428;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0075af, #007fda);
@@ -129,11 +130,65 @@ nav {
 }
 
 
+/* Ok */
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 135, 201, 0.8);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: linear-gradient(326deg, #0075af 0%, rgba(0, 135, 201, 0.8) 10%), url("/img/equipo.jpg");
+    }
+    header video {
+        display: none;
+    }
+    header .overlay {
+        display: none;
+    }
+}
+
+
 /*********** ACERCA ***********/
 
 .acercaDe {
     padding: 5rem;
-    margin-top: 3rem;
 }
 
 .ab_agency {
@@ -921,6 +976,7 @@ nav {
     align-items: center;
     flex-direction: column;
     background-attachment: fixed;
+    text-align: center;
 }
 
 .donativo h3 {
@@ -1232,12 +1288,7 @@ textarea.input-form:focus {
 
 footer {
     min-height: 20vh;
-    background: #56CCF2;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2F80ED, #56CCF2);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1b2b4b;
     display: flex !important;
     padding: 2rem !important;
     justify-content: center;
@@ -1348,7 +1399,7 @@ footer a i:hover {
 /*********** MEDIAQUERIEs ***********/
 
 @media(max-width: 1000px) {
-    .banner {
+    header {
         grid-template-columns: 1fr;
         text-align: center;
     }
@@ -1358,49 +1409,49 @@ footer a i:hover {
 }
 
 @media(max-width: 700px) {
-    .banner .title-transformando,
-    .banner .title-vidas {
+    header .title-transformando,
+    header .title-vidas {
         font-size: 3rem !important;
     }
-    .banner .description-banner {
+    .header .description-banner {
         font-size: 1.5rem;
     }
 }
 
 @media(max-width: 550px) {
-    .banner .title-transformando,
-    .banner .title-vidas {
+    header .title-transformando,
+    header .title-vidas {
         font-size: 2.5rem !important;
     }
-    .banner .description-banner {
+    header .description-banner {
         font-size: 1.2rem;
     }
 }
 
 @media(max-width: 450px) {
-    .banner .container-banner-buttons {
+    header .container-banner-buttons {
         padding: 2rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 0.8rem;
     }
-    .banner .container-banner-buttons .btn-conoce,
-    .banner .container-banner-buttons .btn-contacto-banner {
+    header .container-banner-buttons .btn-conoce,
+    header .container-banner-buttons .btn-contacto-banner {
         display: block !important;
         width: 100%;
     }
-    .banner .title-transformando,
-    .banner .title-vidas {
+    header .title-transformando,
+    header .title-vidas {
         font-size: 2.5rem !important;
     }
-    .banner .description-banner {
+    header .description-banner {
         font-size: 1.2rem;
     }
 }
 
 @media(max-width: 450px) {
-    .banner .title-transformando,
-    .banner .title-vidas {
+    header .title-transformando,
+    header .title-vidas {
         font-size: 2.4rem !important;
     }
     .banner .description-banner {
@@ -1409,8 +1460,8 @@ footer a i:hover {
 }
 
 @media(max-width: 400px) {
-    .banner .title-transformando,
-    .banner .title-vidas {
+    header .title-transformando,
+    header .title-vidas {
         font-size: 2.2rem !important;
     }
     .banner .description-banner {
@@ -1419,11 +1470,11 @@ footer a i:hover {
 }
 
 @media(max-width: 370px) {
-    .banner .title-transformando,
-    .banner .title-vidas {
+    header .title-transformando,
+    header .title-vidas {
         font-size: 2.1rem !important;
     }
-    .banner .description-banner {
+    header .description-banner {
         font-size: 1.1rem;
     }
 }
