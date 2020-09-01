@@ -30,19 +30,12 @@ nav {
 
 /*********** BANNER ***********/
 
-.banner {
-    width: 100%;
-    min-height: 100vh;
-    padding: 0 7rem;
-    background: linear-gradient(326deg, #0075af 0%, rgba(0, 135, 201, 0.8) 10%), url("/img/equipo.jpg");
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 3rem;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.w-100 {
+    width: 100% !important;
+}
+
+.bg-black {
+    background: #000 !important;
 }
 
 header .title-transformando {
@@ -65,7 +58,8 @@ header p {
 }
 
 header .btn-conoce {
-    background: none !important;
+    border: none !important;
+    background: #E15119 !important;
     padding: 1.1rem !important;
     padding-right: 2rem !important;
     padding-left: 2rem !important;
@@ -73,6 +67,9 @@ header .btn-conoce {
     border: 1px solid #fff;
     border-radius: 30px;
     margin-right: 1rem;
+    -webkit-box-shadow: 0px 0px 23px -11px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 0px 0px 23px -11px rgba(0, 0, 0, 0.67);
+    box-shadow: 0px 0px 23px -11px rgba(0, 0, 0, 0.67);
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -ms-transition: all 0.2s ease-in;
@@ -167,7 +164,7 @@ header .overlay {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 135, 201, 0.8);
+    background-color: rgba(0, 135, 201, 0.9);
     opacity: 0.5;
     z-index: 1;
 }
