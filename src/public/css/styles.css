@@ -158,6 +158,16 @@ header .container {
     z-index: 2;
 }
 
+header .container .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .content .container-banner-buttons {
+    display: flex;
+    align-items: center;
+}
+
 header .overlay {
     position: absolute;
     top: 0;
@@ -169,7 +179,8 @@ header .overlay {
     z-index: 1;
 }
 
-@media (pointer: coarse) and (hover: none) {
+
+/* @media (pointer: coarse) and (hover: none) {
     header {
         background: linear-gradient(326deg, #0075af 0%, rgba(0, 135, 201, 0.8) 10%), url("/img/equipo.jpg");
     }
@@ -179,7 +190,7 @@ header .overlay {
     header .overlay {
         display: none;
     }
-}
+} */
 
 
 /*********** ACERCA ***********/
