@@ -57,7 +57,8 @@ header p {
     margin-bottom: 2rem !important;
 }
 
-header .btn-conoce {
+header .btn-conoce,
+header .btn-contacto-top {
     border: none !important;
     background: #E15119 !important;
     padding: 1.1rem !important;
@@ -1414,6 +1415,13 @@ footer a i:hover {
     .foto-acerca {
         display: none !important;
     }
+    header .container .content {
+        display: flex;
+        flex-direction: column;
+    }
+    header .container .content .container-banner-buttons {
+        margin: auto;
+    }
 }
 
 @media(max-width: 700px) {
@@ -1454,6 +1462,10 @@ footer a i:hover {
     }
     header .description-banner {
         font-size: 1.2rem;
+    }
+    header .container .content .container-banner-buttons {
+        display: flex;
+        flex-direction: column;
     }
 }
 

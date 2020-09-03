@@ -267,7 +267,7 @@ $(document).ready(function() {
         $('html, body').animate({ scrollTop: $('#acerca-content').offset().top }, 1000);
     });
 
-    $('.btn-contacto-banner').click(function() {
+    $('.btn-contacto-banner, .btn-contacto-top').click(function() {
 
         $('html, body').animate({ scrollTop: $('#contacto-content').offset().top }, 1000);
     });
