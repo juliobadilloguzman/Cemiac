@@ -14,7 +14,7 @@ $(document).ready(function() {
                 id: 1,
                 nombre: 'Marco',
                 apellido: 'Luna',
-                carrera: 'Estudiante Lic. Administración y Estrategia de Negocios',
+                carrera: 'Estudiante de Administración y Estrategia de Negocios',
                 imagen: 'marco2.jpg',
                 estado: 'Morelos',
                 puesto: 'Presidente',
@@ -37,27 +37,28 @@ $(document).ready(function() {
                 carrera: 'Arquitecto',
                 imagen: 'leonardo2.jpg',
                 estado: 'Coahuila',
-                puesto: 'Arquitectura',
+                puesto: 'Director de Diseño',
                 frase: `"El verdadero éxito de uno se puede encontrar en la sonrisa de alguien más."`
             },
             {
                 id: 4,
-                nombre: 'María',
-                apellido: 'Gama',
-                carrera: 'Estudiante de Ingeniería en Mecatrónica',
-                imagen: 'maria2.jpg',
+                nombre: 'Oscar',
+                apellido: 'Llera',
+                carrera: 'Estudiante de Lic. en Negocios Internacionales',
+                imagen: 'oscar2.png',
                 estado: 'Morelos',
-                puesto: 'Estrategia y logística',
-                frase: `"Ayudar no solo aporta un beneficio a los que la reciben, también a quien la da."`
+                puesto: 'Director de Finanzas',
+                frase: `"Nada libera nuestra grandeza como el deseo de ayudar y de servir." Williamson`
             },
+
             {
                 id: 5,
                 nombre: 'Rodrigo',
                 apellido: 'Barreto',
-                carrera: 'Estudiante Arquitectura ',
+                carrera: 'Estudiante de Arquitectura ',
                 imagen: 'rodrigob2.jpg',
                 estado: 'Morelos',
-                puesto: 'Arquitectura',
+                puesto: 'Director de Prototipos',
                 frase: `"Un minuto de tu tiempo para otro es un mundo, regálaselo."`
             },
             {
@@ -79,6 +80,52 @@ $(document).ready(function() {
                 estado: 'Querétaro',
                 puesto: 'Construcción y validación',
                 frase: `"Siempre da lo mejor de ti, y lo demás sólo se logrará."`
+            },
+
+            {
+                id: 8,
+                nombre: 'Mabely',
+                apellido: 'García',
+                carrera: 'Estudiante de Lic. en Comunicación y Medios digitales ',
+                imagen: 'mabely1.png',
+                estado: 'Estado de México',
+                puesto: 'Directora de Comunicación',
+                frase: `""Cuando haces las cosas con amor y pensando en hacerle bien al otro, nunca pierdes"
+                - Tíbet Buda House
+                "`
+            },
+
+            {
+                id: 9,
+                nombre: 'Brenda',
+                apellido: 'Carvajal ',
+                carrera: 'Estudiante de Ing en Innovación y Desarrollo',
+                imagen: 'brenda1.png',
+                estado: 'Puebla',
+                puesto: 'Directora de Comercialización',
+                frase: `“Manos que dan nunca estarán vacías, y la mejor inversión para el país estoy convencida que es la educación”.`
+            },
+
+            {
+                id: 10,
+                nombre: 'Andrea',
+                apellido: 'Ocampo ',
+                carrera: 'Estudiante de Lic. en Administración Financiera',
+                imagen: 'andreaocam1.png',
+                estado: 'Morelos',
+                puesto: 'Directora de Recursos Humanos',
+                frase: `"“Menos miedo, más fé” - Anónimo"`
+            },
+
+            {
+                id: 11,
+                nombre: 'Mariana',
+                apellido: 'Rodríguez',
+                carrera: 'Estudiante de Ing. en Biotecnología',
+                imagen: 'mariana1.png',
+                estado: 'Chihuahua',
+                puesto: 'Directora de Relaciones Públicas',
+                frase: `"“Quien tiene un porqué para vivir, encontrará casi siempre el cómo.” - Niestzche`
             },
         ]
 
@@ -107,9 +154,26 @@ $(document).ready(function() {
 
     });
 
+    //Agregado Emmanuel
+
     $('body').on('click', '.btn-modalCasa', function() {
 
         $('#modalCasa').modal('show');
+
+    });
+
+    
+    $('body').on('click', '.btn-modalConstruyendo', function () {
+
+        $('#modalConstruyendo').modal('show');
+
+    });
+
+    //Fin agregado
+
+    $('body').on('click', '.btn-modalResumen', function () {
+
+        $('#modalResumen').modal('show');
 
     });
 

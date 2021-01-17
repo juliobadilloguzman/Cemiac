@@ -9,6 +9,8 @@ body {
     font-family: 'Raleway', sans-serif !important;
     line-height: 1.6;
     font-size: 1.1rem;
+    text-align: justify !important;
+    color: #000000 !important;
 }
 
 
@@ -726,7 +728,7 @@ header .overlay {
     top: 58px;
     content: '';
     width: 2px;
-    height: 400px;
+    height: 225px;
     background: #000;
 }
 
@@ -1112,7 +1114,7 @@ textarea.input-form:focus {
     font-size: 14px;
     letter-spacing: 0.56px;
     line-height: 70px;
-    color: #818181;
+    color: #212121;
     margin: 0 0 30px;
     outline: none;
     border-radius: 0;
